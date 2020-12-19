@@ -53,7 +53,7 @@ namespace Tests
         {
             TranslationProvider provider = 
                 new TranslationProvider(
-                    new TranslationDictionaryFileLoader("ParentFallbackTests.json"), new []{ new CultureInfo("en") });
+                    new []{ new CultureInfo("en") }, new TranslationDictionaryFileLoader("ParentFallbackTests.json"));
 
             var okString = provider.Translate("ok", new CultureInfo("de-DE"));
             

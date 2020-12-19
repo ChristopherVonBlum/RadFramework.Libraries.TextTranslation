@@ -3,6 +3,7 @@
     <PropertyGroup>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <TargetFrameworks>netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>

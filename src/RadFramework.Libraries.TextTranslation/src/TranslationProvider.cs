@@ -11,15 +11,16 @@ namespace RadFramework.Libraries.TextTranslation
         private Dictionary<CultureInfo, TranslationDictionary> dictionary;
         
         
-        public TranslationProvider(ITranslationDictionaryLoader loader) : this(loader, new CultureInfo[0])
+        public TranslationProvider(params ITranslationDictionaryLoader[] loaders) : this(new CultureInfo[0], new ITranslationDictionaryLoader[0])
         {
         }
         
-        public TranslationProvider(ITranslationDictionaryLoader loader, IEnumerable<CultureInfo> fallbackCultures)
+        public TranslationProvider(IEnumerable<CultureInfo> fallbackCultures, params ITranslationDictionaryLoader[] loaders)
         {
             _fallbackCultures = fallbackCultures;
-            dictionary = loader
-                .LoadDictionaries()
+            
+            dictionary = loaders
+                .SelectMany(l => l.LoadDictionaries())
                 .GroupBy(d => d.Culture)
                 .Select(d =>
                     new TranslationDictionary
