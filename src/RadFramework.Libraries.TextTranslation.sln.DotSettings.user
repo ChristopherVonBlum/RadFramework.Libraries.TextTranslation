@@ -1,6 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/home/anon/.cache/JetBrains/Rider2020.3/resharper-host/temp/Rider/vAny/CoverageData/_RadFramework.Libraries.TextTranslation.1777775629/Snapshot/snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dd422320_002D6bd2_002D4297_002D80ca_002D3dd56bb32ebc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::6E5A83D4-B787-42BF-B48C-B70E62E196DA::.NETCoreApp,Version=v3.1::Tests.Tests.Translate&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::6E5A83D4-B787-42BF-B48C-B70E62E196DA::.NETCoreApp,Version=v3.1::Tests.Tests.TranslateWithParentCultureFallback&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::6E5A83D4-B787-42BF-B48C-B70E62E196DA::.NETCoreApp,Version=v3.1::Tests.Tests.TranslateWithFallbackChain&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::6E5A83D4-B787-42BF-B48C-B70E62E196DA::.NETCoreApp,Version=v3.1::Tests.Tests.TranslateFallbackToKey&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
