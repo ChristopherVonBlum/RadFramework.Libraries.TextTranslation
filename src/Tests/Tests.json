@@ -1,0 +1,14 @@
+[
+  {
+    "culture" : "en-US",
+    "dictionary" : {
+      "ok" : "ok string"
+    }
+  },
+  {
+    "culture" : "de-DE",
+    "dictionary" : {
+      "ok" : "Bestätigen"
+    }
+  }
+]
