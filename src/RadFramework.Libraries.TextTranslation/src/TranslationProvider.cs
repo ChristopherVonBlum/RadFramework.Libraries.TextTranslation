@@ -60,8 +60,6 @@ namespace RadFramework.Libraries.TextTranslation
                 return cultureInfo.Parent;
             }
 
-            CultureInfo fallbackCulture = null;
-
             foreach (var culture in _fallbackCultures)
             {
                 if (dictionary.ContainsKey(culture) &&
