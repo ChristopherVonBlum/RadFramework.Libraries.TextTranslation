@@ -33,6 +33,18 @@ namespace RadFramework.Libraries.TextTranslation
                 .ToDictionary(k => k.Culture);
         }
         
+        public string Translate(string key)
+        {
+            CultureInfo resolved = ResolveCulture(key, CultureInfo.CurrentUICulture);
+
+            if (resolved == null)
+            {
+                return key;
+            }
+
+            return dictionary[resolved].Dictionary[key];
+        }
+        
         public string Translate(string key, CultureInfo cultureInfo)
         {
             CultureInfo resolved = ResolveCulture(key, cultureInfo);
