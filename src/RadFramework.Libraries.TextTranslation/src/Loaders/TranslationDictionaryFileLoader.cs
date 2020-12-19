@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
-using RadFramework.Libraries.TextTranslation.Abstrations;
+using RadFramework.Libraries.TextTranslation.Abstractions;
 
-namespace RadFramework.Libraries.TextTranslation
+namespace RadFramework.Libraries.TextTranslation.Loaders
 {
     public class TranslationDictionaryFileLoader : ITranslationDictionaryLoader
     {

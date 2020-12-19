@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
 using System.Linq;
-using RadFramework.Libraries.TextTranslation.Abstrations;
+using RadFramework.Libraries.TextTranslation.Abstractions;
 
 namespace RadFramework.Libraries.TextTranslation
 {

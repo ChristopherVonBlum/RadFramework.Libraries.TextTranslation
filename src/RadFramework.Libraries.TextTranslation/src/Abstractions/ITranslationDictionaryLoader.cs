@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace RadFramework.Libraries.TextTranslation.Abstrations
+namespace RadFramework.Libraries.TextTranslation.Abstractions
 {
     public interface ITranslationDictionaryLoader
     {

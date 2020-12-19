@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace RadFramework.Libraries.TextTranslation.Abstrations
+namespace RadFramework.Libraries.TextTranslation.Abstractions
 {
     public interface ITranslationProvider
     {

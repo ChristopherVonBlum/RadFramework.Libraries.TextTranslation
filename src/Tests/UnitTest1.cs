@@ -1,6 +1,7 @@
 using System.Globalization;
 using NUnit.Framework;
 using RadFramework.Libraries.TextTranslation;
+using RadFramework.Libraries.TextTranslation.Loaders;
 
 namespace Tests
 {
