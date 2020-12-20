@@ -8,18 +8,18 @@ namespace RadFramework.Libraries.TextTranslation.Loaders
 {
     public class TranslationDictionaryEmbeddedResourceLoader : ITranslationDictionaryLoader
     {
+        private readonly Assembly _assembly;
         private readonly string _resourceName;
 
-        public TranslationDictionaryEmbeddedResourceLoader(string resourceName)
+        public TranslationDictionaryEmbeddedResourceLoader(Assembly assembly, string resourceName)
         {
+            _assembly = assembly;
             _resourceName = resourceName;
         }
         
         public IEnumerable<TranslationDictionary> LoadDictionaries()
         {
-            var assembly = Assembly.GetExecutingAssembly();
-            
-            using (StreamReader sr = new StreamReader(assembly.GetManifestResourceStream(_resourceName)))
+            using (StreamReader sr = new StreamReader(_assembly.GetManifestResourceStream(_resourceName)))
             {
                 return JsonConvert.DeserializeObject<TranslationDictionary[]>(sr.ReadToEnd());
             }
