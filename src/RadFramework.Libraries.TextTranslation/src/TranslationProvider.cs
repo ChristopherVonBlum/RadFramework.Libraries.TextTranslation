@@ -11,7 +11,7 @@ namespace RadFramework.Libraries.TextTranslation
         private Dictionary<CultureInfo, TranslationDictionary> dictionary;
         
         
-        public TranslationProvider(params ITranslationDictionaryLoader[] loaders) : this(new CultureInfo[0], new ITranslationDictionaryLoader[0])
+        public TranslationProvider(params ITranslationDictionaryLoader[] loaders) : this(new CultureInfo[0], loaders)
         {
         }
         
